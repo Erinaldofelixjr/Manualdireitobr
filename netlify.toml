@@ -1,0 +1,22 @@
+[build]
+  publish = "."
+  command = "echo 'Site estático simples'"
+
+[[redirects]]
+  from = "http://manualdodireito.online/*"
+  to = "https://manualdodireito.online/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.manualdodireito.online/*"
+  to = "https://manualdodireito.online/:splat"
+  status = 301
+  force = true
+
+# Redirecionamento para SPA (Single Page Application) - caso necessário
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
