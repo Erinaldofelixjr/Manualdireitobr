@@ -1,0 +1,149 @@
+:root {
+    /* Cores inspiradas em dourado, branco e cinza */
+    --primary-color: #b8860b;       /* Dourado escuro (Dark Goldenrod) */
+    --secondary-color: #8b7500;     /* Dourado profundo para degradê */
+    --accent-color: #daa520;        /* Goldenrod - dourado vibrante */
+    --accent-light: #f0c75e;        /* Dourado claro para hover e destaques */
+    --text-primary: #4a4a4a;        /* Cinza escuro para textos principais */
+    --text-secondary: #6e6e6e;      /* Cinza médio */
+    --text-light: #999999;          /* Cinza claro */
+    --text-muted: #bfbfbf;          /* Cinza bem claro, para elementos secundários */
+    --background-white: #ffffff;    /* Branco puro */
+    --background-light: #f9f9f9;    /* Branco muito suave, para seções */
+    --background-gray: #e0e0e0;     /* Cinza claro para fundos neutros */
+    --border-color: #d4af37;        /* Dourado para bordas sutis */
+    --border-light: #f5f5f5;        /* Branco acinzentado para bordas leves */
+    --hover-color: #c9a72b;         /* Dourado mais forte para hover */
+    --success-color: #4caf50;       /* Verde clássico para sucesso (mantido) */
+    --warning-color: #ff9800;       /* Amarelo clássico para alertas (mantido) */
+    --error-color: #e53e3e;         /* Vermelho para erros (mantido) */
+    
+    /* Tipografia e espaçamentos permanecem os mesmos */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+    --spacing-4xl: 5rem;
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    --transition-fast: 0.15s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+}
+
+/* Ajuste de fundo dos headers e heróis para tons dourados */
+.header {
+    background-color: var(--background-white);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow-sm);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--background-white);
+    padding: var(--spacing-4xl) 0;
+    text-align: center;
+}
+
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--background-white);
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+/* Ajuste das cores dos links e elementos interativos */
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-color);
+    background-color: var(--background-light);
+}
+
+.article-link:hover,
+.read-more:hover,
+.category-link:hover,
+.social-links a:hover {
+    color: var(--hover-color);
+}
+
+.newsletter-button {
+    background-color: var(--accent-color);
+    color: var(--background-white);
+}
+
+.newsletter-button:hover {
+    background-color: var(--hover-color);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--background-white);
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-links a:hover {
+    color: var(--background-white);
+}
+
+.social-links a {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Ajuste nos textos para melhor contraste e sofisticação */
+.content-main h2,
+.content-main h3,
+.section-title,
+.article-title,
+.category-card h3,
+.feature-item h3,
+.value-item h3,
+.contact-method h3,
+.faq-item h3,
+.footer-section h3,
+.footer-section h4 {
+    color: var(--primary-color);
+}
+
+.content-main p,
+.article-excerpt,
+.category-card p,
+.feature-item p,
+.value-item p,
+.contact-note,
+.faq-item p,
+.footer-section p {
+    color: var(--text-secondary);
+}
