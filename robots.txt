@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Permitir acesso aos recursos importantes
+Allow: /css/
+Allow: /images/
+
+# Sitemap
+Sitemap: https://manualdodireito.online/sitemap.xml
+
+# Crawl-delay para bots específicos
+User-agent: Googlebot
+Crawl-delay: 1
+
+User-agent: Bingbot
+Crawl-delay: 2
+
+# Permitir bots de redes sociais
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Host
+Host: https://manualdodireito.online
+
